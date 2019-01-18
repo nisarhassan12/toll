@@ -1,0 +1,21 @@
+.not-found {
+
+    
+    text-align: center;
+
+    &__title {
+        @media(min-width: 768px) {
+            font-size: 10rem;
+            color: $color-green;
+            font-weight: 400;
+        }
+    }
+
+    &__subtitle {
+        @media(min-width: 768px) {
+            font-size: 3rem;
+
+        }
+    }
+
+}

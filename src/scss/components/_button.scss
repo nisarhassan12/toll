@@ -1,0 +1,35 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        outline: none;
+        padding: 1.5rem 2.5rem;
+        text-decoration: none;
+        border-radius: 10rem;
+        font-size: 1.4rem;
+        color: $color-black-0;
+        background: $color-green;
+        border: 1px solid $color-green;
+        font-family: inherit;
+        transition: all .2s;
+
+        @media(min-width: 768px) {
+            font-size: 1.8rem;
+            // padding: 1.8rem 3rem;
+        }
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(#000, .2);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 1rem 2rem rgba($color-black-1, .2);
+    }
+
+}

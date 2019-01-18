@@ -1,0 +1,53 @@
+.nav {
+    position: relative;
+    width: 6rem;
+    height: 100vh;
+    float: left;
+
+    @media (min-width: 768px) {
+        width: 15rem;
+    }   
+
+    &__container {
+        position: fixed;
+        height: 100vh;
+        width: 6rem;
+        background: $color-black;
+        @media (min-width: 768px) {
+            width: 15rem;
+        } 
+    }
+
+    &__items {
+        @include center;
+        width: 100%;
+        list-style: none;
+    }
+
+    &__item {
+        display: block;
+        width: 100%;
+        color: $color-grey-0;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        transition: all .2s;
+        border-left: 3px solid transparent;
+
+        @media(min-width: 768px) {
+            font-size: 1.8rem;
+        }
+
+        &:hover {
+            background: $color-black-0;
+            border-left: 3px solid $color-grey-0;
+        }
+
+        &--active {
+            background: $color-black-0;
+            border-left: 3px solid $color-grey-0;
+        }
+
+    }
+
+}

@@ -1,0 +1,25 @@
+.show {
+
+    padding: 5rem 0;
+
+    @media(min-width: 768px) {
+        padding: 10rem 0;
+    }
+
+
+    &__container {
+        background-color:$color-black-1;
+        padding: 5rem 0;
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    .descriptor {
+        width: 80%;
+    }
+    
+    span {
+        color: $color-green;
+    }
+
+}
