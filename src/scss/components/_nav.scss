@@ -8,6 +8,7 @@
         width: 15rem;
     }   
 
+
     &__container {
         position: fixed;
         height: 100vh;
@@ -27,6 +28,7 @@
     &__item {
         display: block;
         width: 100%;
+        text-align: center;
         color: $color-grey-0;
         text-decoration: none;
         text-transform: uppercase;
@@ -35,6 +37,7 @@
         border-left: 3px solid transparent;
 
         @media(min-width: 768px) {
+            text-align: left;
             font-size: 1.8rem;
         }
 
@@ -46,6 +49,26 @@
         &--active {
             background: $color-black-0;
             border-left: 3px solid $color-grey-0;
+        }
+
+        svg {
+            fill: #39ae44;
+            height: 2.2rem;
+            margin: 0 .8rem;
+            display: inline;
+            width: 2.2rem;
+            @media(max-width: 768px) {
+                margin: 0;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+        span {
+            display: none;
+            @media(min-width: 768px) {
+                display: inline;
+            }
         }
 
     }

@@ -6,8 +6,7 @@ class Form extends React.Component {
     state = {
         name: '',
         amount: '',
-        source: '',
-        error: undefined
+        source: ''
     }
 
     onNameChange = (e) => {
@@ -35,11 +34,7 @@ class Form extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault()
         const {history, addItem} = this.props
-        if ( !this.state.name && !this.state.amount ) {
-            // // const error = 'You Must Pr'
-            // this.setState(() => ({ er }))
-        }
-        addItem('income',this.state)
+        addItem('incomes',this.state)
         history.push('/incomes')
     }
 

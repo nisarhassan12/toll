@@ -43,6 +43,7 @@
         float: left;
         font-size: 1.6rem;
         font-weight: 400;
+        transition: all .2s;
 
         @media(min-width: 410px) {
             font-size: 1.8rem;
@@ -51,6 +52,12 @@
         @media(min-width: 768px) {
             font-size: 2.4rem;
         }
+
+        &:hover {
+            color: #bbb;
+            
+        }
+
     }
 
     &__label {
@@ -85,6 +92,11 @@
             font-size: 2rem;
         }
 
+    }
+
+    &__value {
+        margin-bottom: 1.2rem;
+        text-align: center; 
     }
 
     &__description {

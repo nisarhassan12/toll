@@ -3,7 +3,7 @@
     font-size: 3rem;
     font-weight: 700;
     color: $color-green;
-    margin: 0 auto 2.6rem auto;
+    margin-bottom: 2.6rem;
     @include underline;
 
     @media (min-width: 768px) {
@@ -21,22 +21,25 @@
 
 }
 
+.heading-secondary {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: $color-grey-0;
+    text-align: left;
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
 .descriptor {
 
     display: block;
     width: 50%;
     min-width: 26rem;
-    margin: 0 auto;
-
+    margin: auto;
     @media (min-width: 768px) {
         font-size: 2rem;
-    }
-
-    & + a {
-        margin-top: 2rem;
-
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
     }
 }

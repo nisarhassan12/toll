@@ -4,6 +4,7 @@ import moment from 'moment'
 const ExpenseShowPage = ({find, match}) => {
 
     const expense = find('expenses', match.params.id)
+
     return (
         <section className='show'>
             <div className="show__container">

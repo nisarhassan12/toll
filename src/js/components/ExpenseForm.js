@@ -17,7 +17,7 @@ class Form extends React.Component {
         const amount = e.target.value
     
         if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
-          this.setState(() => ({ amount }))
+          this.setState(() => ({amount}))
         }
     }
 

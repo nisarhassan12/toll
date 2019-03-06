@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin sans', sans-serif;
     font-size: $default-size;
     background: $color-black-0;
     font-weight: 300;
@@ -19,6 +19,9 @@ body {
     color: $color-grey-0; 
     box-sizing: border-box;
     text-align: center;
+}
+
+#app {
     @include clearfix;
 }
 
@@ -35,7 +38,6 @@ body {
 
 }
 input {
-
     display: block;
     font-family: inherit;
     margin:  0 auto 2rem auto;
